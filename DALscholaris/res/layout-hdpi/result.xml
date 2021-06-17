@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#000000"
+    android:orientation="horizontal" >
+
+    <AutoCompleteTextView
+        android:id="@+id/txtsearchbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/btnsearch"
+        android:background="@drawable/back"
+        android:ems="10"
+        android:singleLine="true" />
+
+    <Button
+        android:id="@+id/backbutton"
+        android:layout_width="54dp"
+        android:layout_height="34dp"
+        android:layout_alignLeft="@+id/txtsearchbox"
+        android:layout_below="@+id/txtsearchbox"
+        android:text="Prev"
+        android:textSize="12sp" />
+
+    <ListView
+        android:id="@+id/listresults"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/backbutton"
+        android:cacheColorHint="#ebebeb" >
+
+    </ListView>
+
+    <Button
+        android:id="@+id/nextbutton"
+        android:layout_width="54dp"
+        android:layout_height="34dp"
+        android:layout_above="@+id/listresults"
+        android:layout_alignParentRight="true"
+        android:text="Next"
+        android:textSize="12sp" />
+
+    <Button
+        android:id="@+id/btnsearch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/txtsearchbox"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:text="Search" />
+
+    <TextView
+        android:id="@+id/pagemax"
+        android:layout_width="75dp"
+        android:layout_height="27dp"
+        android:layout_alignBaseline="@+id/pagestring"
+        android:layout_alignBottom="@+id/pagestring"
+        android:layout_toRightOf="@+id/pagestring"
+        android:gravity="center|left"
+        android:text=" /0"
+        android:textColor="#ffffff"        
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/pagestring"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/page"
+        android:layout_marginLeft="87dp"
+        android:layout_toRightOf="@+id/backbutton"
+        android:gravity="bottom"
+        android:text="0"
+        android:textColor="#ffffff"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/page"
+        android:layout_width="43dp"
+        android:layout_height="30dp"
+        android:layout_alignBaseline="@+id/backbutton"
+        android:layout_alignBottom="@+id/backbutton"
+        android:layout_alignRight="@+id/pagestring"
+        android:layout_marginRight="16dp"
+        android:layout_weight="1"
+        android:background="#000000"
+        android:ems="10"
+        android:enabled="false"
+        android:gravity="center|right"
+        android:inputType="number"
+        android:singleLine="true"
+        android:text="Page#"
+        android:textColor="#ffffff"
+        android:textSize="12sp"
+        android:textStyle="bold" >
+
+        <requestFocus />
+    </EditText>
+
+</RelativeLayout>

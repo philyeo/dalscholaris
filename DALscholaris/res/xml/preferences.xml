@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+	
+	<PreferenceCategory android:title="Publication Details">
+	<EditTextPreference
+   		android:key="startYear"
+   		android:title="From year"
+   		android:inputType="number"
+   		android:summary=""
+   		android:defaultValue="" />
+	<EditTextPreference
+   		android:key="endYear"
+   		android:title="To year"
+   		android:inputType="number"
+   		android:summary=""
+   		android:defaultValue="" />
+	<EditTextPreference
+   		android:key="journal"
+   		android:title="Journal name"
+   		android:summary=""
+   		android:defaultValue="" />
+	<EditTextPreference
+   		android:key="author"
+   		android:title="Author name"
+   		android:summary=""
+   		android:defaultValue="" />
+
+ 	</PreferenceCategory>
+ 	
+    <PreferenceCategory android:title="Search Categories">
+	<CheckBoxPreference
+   		android:key="bio"
+   		android:title="BIO"
+   		android:summary="Biology, Life Sciences, and Environmental Science"
+   		android:defaultValue="false" />
+	
+	<CheckBoxPreference
+   		android:key="bus"
+   		android:title="BUS"
+   		android:summary="Business, Administration, Finance, and Economics "
+   		android:defaultValue="false" />
+	
+	<CheckBoxPreference
+   		android:key="chm"
+   		android:title="CHM"
+   		android:summary="Chemistry and Materials Science"
+   		android:defaultValue="false" />
+		
+	<CheckBoxPreference
+   		android:key="eng"
+   		android:title="ENG"
+   		android:summary="Engineering, Computer Science, and Mathematics"
+   		android:defaultValue="false" />
+			
+	<CheckBoxPreference
+   		android:key="med"
+   		android:title="MED"
+   		android:summary="Medicine, Pharmacology, and Veterinary Science"
+   		android:defaultValue="false" />
+				
+	<CheckBoxPreference
+   		android:key="phy"
+   		android:title="PHY"
+   		android:summary="Physics, Astronomy, and Planetary Science"
+   		android:defaultValue="false" />
+	
+	<CheckBoxPreference
+   		android:key="soc"
+   		android:title="SOC"
+   		android:summary="Social Sciences, Arts, and Humanities"
+   		android:defaultValue="false" />
+
+ 	</PreferenceCategory>
+	
+ 	
+	<PreferenceCategory android:title="Display Options" >
+	<CheckBoxPreference
+   		android:key="showAuthor"
+   		android:title="Show Author"
+   		android:defaultValue="true" />
+	<CheckBoxPreference
+   		android:key="showSummary"
+   		android:title="Show Summary"
+   		android:defaultValue="true" />
+	<CheckBoxPreference
+   		android:key="showCitation"
+   		android:title="Show Cited By"
+   		android:defaultValue="true" />
+
+	</PreferenceCategory>
+ 	
+	<PreferenceCategory android:title="Set Path" >
+	<EditTextPreference
+   		android:key="downloadPath"
+   		android:title="Downloads folder path"
+   		android:summary="/ScholarDroid/"
+   		android:defaultValue="/ScholarDroid/" />
+
+	</PreferenceCategory>
+	
+	<PreferenceCategory android:title="Set Home page" >
+	<EditTextPreference
+   		android:key="homePage"
+   		android:title="Home page"
+   		android:summary="http://scholar.google.com"
+   		android:defaultValue="http://scholar.google.com" />
+
+	</PreferenceCategory>
+	
+	<PreferenceCategory android:title="Background" >
+	<CheckBoxPreference
+   		android:key="useCustomColor"
+   		android:title="Use Custom Color"
+   		android:summary="To revert from custom to original background, uncheck this option then exit and restart the app."
+   		android:defaultValue="false" />
+	
+	<Preference                 
+	    android:key="bgColor"                  
+	    android:title="Pick a color"
+	    android:summary=""                 
+	    android:defaultValue="#000000" />
+	
+	<CheckBoxPreference
+   		android:key="showImage"
+   		android:title="Show ScholarDroid"
+   		android:defaultValue="true" />
+		
+	</PreferenceCategory>
+
+	<PreferenceCategory android:title="Off-campus Settings" >
+	<CheckBoxPreference
+   		android:key="enableOffCampus"
+   		android:title="Enable Off-campus access"
+   		android:defaultValue="true" />
+	    	
+	<EditTextPreference
+   		android:key="ezproxyURL"
+   		android:title="Ezproxy URL"
+   		android:summary="https://login.ezproxy.library.dal.ca/login"
+   		android:defaultValue="https://login.ezproxy.library.dal.ca/login" />
+	        
+	<EditTextPreference
+   		android:key="netID"
+   		android:title="netID"
+   		android:summary=""
+   		android:defaultValue="" />
+	        
+	<EditTextPreference
+   		android:key="netIDpass"
+   		android:title="Password"
+   		android:summary=""
+   		android:defaultValue=""
+   		android:inputType="textPassword" />   			        
+		
+	</PreferenceCategory>			
+	
+	<PreferenceCategory android:title="Proxy Settings" >
+	<CheckBoxPreference
+   		android:key="enableProxy"
+   		android:title="Use Proxy"
+   		android:defaultValue="false" />
+	    	
+	<EditTextPreference
+   		android:key="proxyHost"
+   		android:title="Host"
+   		android:summary=""
+   		android:defaultValue="" />
+	        
+	<EditTextPreference
+   		android:key="proxyPort"
+   		android:title="Port"
+   		android:summary=""
+   		android:defaultValue="" />
+	        
+	<EditTextPreference
+   		android:key="username"
+   		android:title="Username"
+   		android:summary=""
+   		android:defaultValue="" />
+	        
+	<EditTextPreference
+   		android:key="password"
+   		android:title="Password"
+   		android:summary=""
+   		android:defaultValue=""
+   		android:inputType="textPassword" />
+		
+	</PreferenceCategory>
+	
+ 	
+</PreferenceScreen>
+
+

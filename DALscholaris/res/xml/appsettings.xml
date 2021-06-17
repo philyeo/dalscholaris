@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+	<PreferenceCategory android:title="Display Options" >
+	<CheckBoxPreference
+   		android:key="showAuthor"
+   		android:title="Show Author"
+   		android:defaultValue="true" />
+	<CheckBoxPreference
+   		android:key="showSummary"
+   		android:title="Show Summary"
+   		android:defaultValue="true" />
+	<CheckBoxPreference
+   		android:key="showCitation"
+   		android:title="Show Cited By"
+   		android:defaultValue="true" />
+
+	</PreferenceCategory>
+ 	
+	<PreferenceCategory android:title="Set Path" >
+	<EditTextPreference
+   		android:key="downloadPath"
+   		android:title="Downloads folder path"
+   		android:summary="/dalscholaris/"
+   		android:defaultValue="/dalscholaris/" />
+
+	</PreferenceCategory>
+</PreferenceScreen>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item 
+    android:id="@+id/advancesearch" 
+    android:title="@string/menu_searchoptions"
+    android:showAsAction="ifRoom|withText" 
+    android:icon="@drawable/ic_menu_zoom"/>      
+
+    <item    
+    android:id="@+id/ezproxy"    
+    android:icon="@drawable/location_web_site"   
+    android:title="@string/menu_ezproxy" android:showAsAction="ifRoom|withText"/>   
+    
+    <item    
+    android:id="@+id/view_bookmark"    
+    android:icon="@drawable/ic_input_get"     
+    android:title="@string/menu_fav" android:showAsAction="ifRoom|withText"/>        
+    
+    <item    
+    android:id="@+id/view_downloads"    
+    android:icon="@drawable/ic_menu_archive"   
+    android:title="@string/menu_files" android:showAsAction="ifRoom|withText"/>
+    
+    <item
+    android:id="@+id/appsettings"
+    android:title="@string/menu_appsettings"
+    android:icon="@drawable/location_web_site" 
+    android:showAsAction="ifRoom|withText"/>   
+
+    <item    
+    android:id="@+id/about"    
+    android:icon="@drawable/ic_menu_info_details"   
+    android:title="@string/menu_about" android:showAsAction="ifRoom|withText"/>       
+        
+<!-- <item    
+    android:id="@+id/advanced"    
+    android:icon="@drawable/ic_menu_zoom"   
+    android:title="Advanced" android:showAsAction="ifRoom|withText"/>          
+    
+    <item    
+    android:id="@+id/exit"    
+    android:icon="@drawable/ic_menu_close_clear_cancel"   
+    android:title="Exit" android:showAsAction="ifRoom|withText"/>    
+    
+    <item    
+    android:id="@+id/refresh"    
+    android:icon="@drawable/ic_menu_refresh"   
+    android:title="Refresh" android:showAsAction="ifRoom|withText"/> 
+-->
+
+</menu>

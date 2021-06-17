@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+	<PreferenceCategory android:title="Off-campus Settings" >
+	<CheckBoxPreference
+   		android:key="enableOffCampus"
+   		android:title="Enable Off-campus access"
+   		android:defaultValue="true" />
+	    	
+	<EditTextPreference
+   		android:key="ezproxyURL"
+   		android:title="EZproxy URL"
+   		android:summary="https://login.ezproxy.library.dal.ca/login"
+   		android:defaultValue="https://login.ezproxy.library.dal.ca/login" />
+	        
+	<EditTextPreference
+   		android:key="netID"
+   		android:title="netID"
+   		android:summary=""
+   		android:defaultValue="" />
+	        
+	<EditTextPreference
+   		android:key="netIDpass"
+   		android:title="Password"
+   		android:summary=""
+   		android:defaultValue=""
+   		android:inputType="textPassword" />   			        
+		
+	</PreferenceCategory>	
+</PreferenceScreen>

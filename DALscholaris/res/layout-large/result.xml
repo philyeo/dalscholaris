@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#000000"
+    android:orientation="horizontal"
+    android:padding="10dp" >
+
+    <ListView
+        android:id="@+id/listresults"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nextbutton"
+        android:layout_centerHorizontal="true"
+        android:cacheColorHint="#ebebeb" >
+    </ListView>
+
+    <AutoCompleteTextView
+        android:id="@+id/txtsearchbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/listresults"
+        android:layout_alignTop="@+id/btnsearch"
+        android:layout_toLeftOf="@+id/btnsearch"
+        android:background="@drawable/back"
+        android:ems="10"
+        android:singleLine="true" />
+
+    <Button
+        android:id="@+id/btnsearch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/listresults"
+        android:background="@drawable/custom_button"
+        android:minHeight="39dp"
+        android:text="Search" />
+
+    <Button
+        android:id="@+id/backbutton"
+        android:layout_width="62dp"
+        android:layout_height="34dp"
+        android:layout_above="@+id/listresults"
+        android:layout_alignRight="@+id/txtsearchbox"
+        android:background="@drawable/custom_button"
+        android:text="Prev"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/pagemax"
+        android:layout_width="75dp"
+        android:layout_height="27dp"
+        android:layout_below="@+id/btnsearch"
+        android:layout_toRightOf="@+id/pagestring"
+        android:gravity="center|left"
+        android:text=" /0"
+        android:textColor="#ffffff"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/pagestring"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/pagemax"
+        android:layout_alignBottom="@+id/pagemax"
+        android:layout_marginLeft="17dp"
+        android:layout_toRightOf="@+id/page"
+        android:gravity="bottom"
+        android:text="0"
+        android:textColor="#ffffff"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/page"
+        android:layout_width="44dp"
+        android:layout_height="27dp"
+        android:layout_alignBaseline="@+id/pagestring"
+        android:layout_alignBottom="@+id/pagestring"
+        android:layout_alignLeft="@+id/txtsearchbox"
+        android:layout_weight="1"
+        android:background="#000000"
+        android:ems="10"
+        android:enabled="false"
+        android:gravity="center|right"
+        android:inputType="number"
+        android:singleLine="true"
+        android:text="Page#"
+        android:textColor="#ffffff"
+        android:textSize="13sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/nextbutton"
+        android:layout_width="54dp"
+        android:layout_height="34dp"
+        android:layout_alignLeft="@+id/btnsearch"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/pagemax"
+        android:background="@drawable/custom_button"
+        android:text="Next"
+        android:textSize="12sp" />
+
+</RelativeLayout>

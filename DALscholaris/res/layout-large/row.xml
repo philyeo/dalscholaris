@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:background = "#ebebeb" >
+    
+	<TextView
+		android:id="@+id/title"
+		android:layout_alignParentLeft="true"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:textSize="14sp" 
+  		android:textStyle="bold"
+  		android:textColor="#222222" />
+	
+	<TextView
+		android:id="@+id/author"
+		android:layout_alignParentLeft="true"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+
+		android:textColor="#3c76a8" />
+	
+	<TextView
+		android:id="@+id/link"
+		android:layout_alignParentLeft="true"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:visibility="gone" />
+	
+	<TextView
+		android:id="@+id/text"
+		android:layout_alignParentLeft="true"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:textColor="#6D6D6D" />
+	
+	<TextView
+		android:id="@+id/cites"
+		android:layout_alignParentLeft="true"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:textColor="#6D6D6D" />
+
+	<RelativeLayout  
+    	android:layout_width="fill_parent"
+    	android:layout_height="wrap_content">
+    
+    <Button 
+        android:id="@+id/linkonlybutton" 
+        android:layout_width="80dp"
+        android:layout_height="34dp" 
+        android:textSize="12sp"
+        android:layout_below="@+id/cites"
+        android:layout_alignParentRight="true"
+        android:text="View Link"
+        android:focusable="false" />
+    		
+	<Button 
+        android:id="@+id/amazonbutton" 
+        android:layout_width="80dp"
+        android:layout_height="34dp" 
+        android:textSize="12sp"
+        android:layout_below="@+id/cites" 
+        android:layout_toLeftOf="@+id/linkonlybutton"
+        android:text="Amazon"
+        android:focusable="false" />
+	    	
+	<Button 
+        android:id="@+id/viewbutton" 
+        android:layout_width="80dp"
+        android:layout_height="34dp" 
+        android:textSize="12sp"
+        android:layout_below="@+id/cites"
+        android:layout_toLeftOf="@+id/amazonbutton"
+        android:text="View PDF"
+        android:focusable="false" />
+	
+	</RelativeLayout>
+
+</LinearLayout>
+    

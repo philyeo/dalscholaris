@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+	<PreferenceCategory android:title="Advance Search">
+	<EditTextPreference
+   		android:key="startYear"
+   		android:title="From year"
+   		android:inputType="number"
+   		android:summary=""
+   		android:defaultValue="" />
+	<EditTextPreference
+   		android:key="endYear"
+   		android:title="To year"
+   		android:inputType="number"
+   		android:summary=""
+   		android:defaultValue="" />
+	<EditTextPreference
+   		android:key="journal"
+   		android:title="Journal name"
+   		android:summary=""
+   		android:defaultValue="" />
+	<EditTextPreference
+   		android:key="author"
+   		android:title="Author name"
+   		android:summary=""
+   		android:defaultValue="" />
+
+ 	</PreferenceCategory>
+ </PreferenceScreen>

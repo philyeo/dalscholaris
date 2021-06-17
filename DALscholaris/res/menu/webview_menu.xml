@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>  
+<menu xmlns:android="http://schemas.android.com/apk/res/android">  
+    
+    <item    
+    android:id="@+id/return_search"    
+    android:icon="@drawable/ic_menu_search"   
+    android:title="Return to Search" />
+    
+    <item    
+    android:id="@+id/homepage"    
+    android:icon="@drawable/ic_menu_home"   
+    android:title="Home page" />
+    
+    <item    
+    android:id="@+id/notes"    
+    android:icon="@drawable/ic_menu_edit"   
+    android:title="Notepad" />
+    
+    <item    
+    android:id="@+id/bookmark"    
+    android:icon="@drawable/ic_input_get"   
+    android:title="Add favourite" />
+    
+    <item    
+    android:id="@+id/save"    
+    android:icon="@drawable/ic_menu_save"   
+    android:title="Save to SD card" />
+        
+    <item    
+    android:id="@+id/email"    
+    android:icon="@drawable/ic_dialog_email"   
+    android:title="Email link" />
+
+</menu>

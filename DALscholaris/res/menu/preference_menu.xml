@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>  
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item    
+    android:id="@+id/returntosearch"    
+    android:icon="@drawable/ic_menu_search"   
+    android:title="Return to Search" />
+    
+    <item    
+    android:id="@+id/startover"    
+    android:icon="@drawable/ic_menu_revert"   
+    android:title="Start over" />
+    
+    <item    
+    android:id="@+id/clearhistory"    
+    android:icon="@drawable/ic_menu_delete"   
+    android:title="Clear History" />
+    
+    <item    
+    android:id="@+id/chooseyear"    
+    android:icon="@drawable/ic_menu_my_calendar"   
+    android:title="Choose Year" />
+    
+       
+    <item    
+    android:id="@+id/choosejournal"    
+    android:icon="@drawable/ic_menu_compose"   
+    android:title="Choose Journal" />
+    
+    <item    
+    android:id="@+id/setpath"    
+    android:icon="@drawable/ic_menu_agenda"   
+    android:title="Downloads Path" />
+        
+</menu>
